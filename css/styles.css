@@ -1,26 +1,67 @@
+a {
+  color: #FFA400;
+}
+
+a:hover {
+  color: #5DD0C0;
+}
+
 body {
   font-family: helvetica;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+h1,
+h2,
+h4 {
+  text-decoration: underline;
+}
+
+#numbersList {
+  font-size: 20px;
+}
+
+#rules,
+#numbersList {
+  list-style: none;
+}
+
+#column-wrap {
+  overflow: hidden;
+}
+
+.acronym {
+  font-weight: bolder;
+  text-decoration: underline;
+  color: #FFA400;
+}
+
+.btn {
+  background-color: #1B0773;
+  color: #FFA400;
+}
+
+.btn:hover {
+  color: #5DD0C0;
 }
 
 .container {
   text-align: center;
 }
 
-ul {
-  list-style: none;
-  font-size: 20px;
+.jumbotron {
+  background-image: url("../img/balls.jpg");
+  background-size: cover;
 }
 
-.acronym {
-  font-weight: bolder;
-}
-
-.sidebar {
-  float: left;
-  background-color: #1B0773;
-  color: #8370D8;
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
+.jumbotron h1,
+.jumbotron h4,
+.jumbotron ul {
+  color: #1B0773;
 }
 
 .results {
@@ -31,11 +72,14 @@ ul {
   padding-bottom: 99999px;
 }
 
-.jumbotron {
-  background-image: url("../img/balls.jpg");
-  background-size: cover;
+.sidebar {
+  float: left;
+  background-color: #1B0773;
+  color: #8370D8;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
 }
 
-#column-wrap {
-    overflow: hidden;
+.sidebar p {
+  font-style: italic;
 }
