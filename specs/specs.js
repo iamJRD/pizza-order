@@ -11,4 +11,8 @@ describe("pingPonging", function(){
     expect(pingPonging(45)).to.equal("PingPong");
   });
 
+  it("will return the number if it is not divisable by 3 or 5", function(){
+    expect(pingPonging(13)).to.equal(13);
+  });
+
 });
