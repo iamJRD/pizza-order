@@ -1,0 +1,41 @@
+body {
+  font-family: helvetica;
+}
+
+.container {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  font-size: 20px;
+}
+
+.acronym {
+  font-weight: bolder;
+}
+
+.sidebar {
+  float: left;
+  background-color: #1B0773;
+  color: #8370D8;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.results {
+  float: right;
+  background-color: #00685A;
+  color: #5DD0C0;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.jumbotron {
+  background-image: url("../img/balls.jpg");
+  background-size: cover;
+}
+
+#column-wrap {
+    overflow: hidden;
+}

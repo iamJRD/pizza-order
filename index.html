@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <div class="container">
+    <div class="container jumbotron img-responsive">
       <h1>Ping-Pong!</h1>
 <!-- FORM START -->
         <form id="pingPongForm">
@@ -23,11 +23,29 @@
         </form>
 <!-- FORM END -->
     </div>
-<!-- RESULTS LIST -->
     <div class="container">
-      <ul id="numbersList">
-      </ul>
-    </div>
+      <div class="row">
+        <div id="column-wrap">
+<!-- SIDEBAR -->
+          <div class="col-xs-4 sidebar">
+            <h2>About Ping-Pong</h2>
+            <h4>Created By:</h4>
+              <p>Jared Beckler</p>
+            <h4>GitHub Username/URL:</h4>
+              <p><a href="https://github.com/jaredbeckler">jaredbeckler</a></p>
+            <h4>Intro to Programming</h4>
+              <p>Week 3 Code Review</p>
+              <p><span class="acronym">B</span>ehavior-<span class="acronym">D</span>riven <span class="acronym">D</span>evelopment with JavaScript</p>
+          </div>
+<!-- END SIDEBAR -->
 <!-- RESULTS LIST -->
+          <div class="col-xs-8 results">
+            <ul id="numbersList">
+            </ul>
+          </div>
+<!-- RESULTS LIST -->
+        </div>
+      </div>
+    </div>
   </body>
 </html>
