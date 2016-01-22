@@ -9,3 +9,15 @@ var pingPonging = function(number){
     return number;
   }
 }
+
+$(document).ready(function(){
+  $("form#pingPongForm").submit(function(event){
+    var userInput = parseInt($("input#userInput").val());
+
+    for(i = 0; i <= userInput; i++){
+      $("#numberList").append("<li>" + pingPonging(i) + "</li>");
+    }
+
+    event.preventDefault();
+  });
+});
