@@ -12,12 +12,20 @@ var pingPonging = function(number){
 
 $(document).ready(function(){
   $("form#pingPongForm").submit(function(event){
-    var userInput = parseInt($("input#userInput").val());
+    var userInput = parseInt($("input#userInput").val())
 
-    for(i = 0; i <= userInput; i++){
-      $("#numberList").append("<li>" + pingPonging(i) + "</li>");
+    if ($("#numbersList").is(":empty")){
+      for(i = 1; i <= userInput; i++){
+        $("#numbersList").append("<li>" + pingPonging(i) + "</li>");
+      }
+      event.preventDefault();
     }
-
+    else {
+      $("#numbersList").text("")
+      for(i = 1; i <= userInput; i++){
+      $("#numbersList").append("<li>" + pingPonging(i) + "</li>");
+      }
+    }
     event.preventDefault();
   });
 });
