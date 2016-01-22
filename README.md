@@ -10,7 +10,7 @@ _This webpage takes in a user inputted number and counts up to it while replacin
 
 ## Setup/Installation Requirements
 
-_Visit my GitHub repository ((https://github.com/jaredbeckler/pingpong)), clone, and enjoy._
+_Visit my GitHub repository, (https://github.com/jaredbeckler/pingpong), clone, and enjoy._
 
 ## Known Bugs
 
