@@ -33,3 +33,30 @@ PizzaOrder.prototype.pricing = function() {
 PizzaOrder.prototype.orderSummary = function() {
   return this.pizzaSize + " " + this.pizzaName;
 };
+
+function resetFields() {
+  $("input#inputtedQuantity").val("");
+  $("select#inputtedPizzaSize").val("");
+  $("input#inputtedPizzaName").val("");
+  $("input:checkbox").removeAttr("checked");
+}
+
+$(document).ready(function() {
+  $("form#new-pizza-order").submit(function(event) {
+    event.preventDefault();
+
+    var inputtedQuantity = $("input#inputtedQuantity").val();
+    var inputtedPizzaSize = $("input#inputtedPizzaSize").val();
+    var inputtedToppings = $("inputtedToppings").val();
+    var inputtedPizzaName = $("input#inputtedPizzaName").val();
+    var newPizzaOrder = new PizzaOrder(inputtedQuantity, inputtedPizzaSize, inputtedToppings);
+
+    $("p#finalOrder").text(newPizzaOrder.orderSummary());
+
+
+
+
+
+    resetFields();
+  });
+});
