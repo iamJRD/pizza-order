@@ -1,15 +1,16 @@
 describe ("PizzaOrder", function() {
   it("creates a new pizza order with the given properties", function() {
-    var testPizzaOrder = new PizzaOrder("1", "Small", "name", [], 12);
+    var testPizzaOrder = new PizzaOrder("1", "Small", "name", "Pepperoni", [], 12.50);
     expect(testPizzaOrder.quantity).to.equal("1");
     expect(testPizzaOrder.pizzaSize).to.equal("Small");
     expect(testPizzaOrder.pizzaName).to.equal("name");
-    expect(testPizzaOrder.toppings).to.eql([]);
-    expect(testPizzaOrder.price).to.equal(12);
+    expect(testPizzaOrder.toppings).to.equal("Pepperoni");
+    expect(testPizzaOrder.toppingsPrice).to.eql([]);
+    expect(testPizzaOrder.price).to.equal(12.50);
   });
 
   it("creates the pricing prototype", function() {
-    var testPizzaOrder = new PizzaOrder("1", "Medium", []);
+    var testPizzaOrder = new PizzaOrder("1", "Medium", "Pepperoni", []);
     expect(testPizzaOrder.pricing()).to.equal(14);
   });
 
