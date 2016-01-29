@@ -58,6 +58,7 @@ $(document).ready(function() {
 
     var newPizzaOrder = new PizzaOrder(inputtedQuantity, selectedPizzaSize, inputtedPizzaName, chosenToppings);
     var totalPrice = newPizzaOrder.pricing();
+    var fullPrice = totalPrice.toFixed(2);
 
     $(".userOrders").show();
     $("ul#order").append("<li><span class='order'>" + newPizzaOrder.orderSummary() + "</span></li>");
@@ -65,17 +66,12 @@ $(document).ready(function() {
     $(".order").last().click(function() {
       $("#orderDetails").show();
       $("#orderDetails h3").text(newPizzaOrder.orderSummary());
-      $(".totalPrice").text("$" + totalPrice);
+      $(".finalPrice").text(" $" + fullPrice);
 
       for (var i = 0; i < chosenToppings.length; i++) {
         $("ul#toppings").append("<li>" + chosenToppings[i] + "</li>")
       };
     });
-
-
-
-
-
     resetFields();
   });
 });
