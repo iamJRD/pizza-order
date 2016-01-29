@@ -10,111 +10,112 @@
     <title>Gantenbein Pizza</title>
   </head>
   <body>
-    <div class="jumbotron">
-      <div class="container text-center">
+<!-- JUMBOTRON -->
+    <div class="jumbotron img-responsive text-center">
+      <div class="container">
+        <br>
         <h1>Welcome to Gantenbein Pizza!</h1>
         <br>
         <br>
-        <p class="lead">"The best pizza pie in all of Portland!"</p>
+        <p>"The best pizza pie in all of Portland!"</p>
         <p>- Wolfgang Puck</p>
       </div>
     </div>
-
+<!-- END JUMBOTRON -->
     <div class="container">
       <div class="row">
+        <div id=column-wrap>
 <!-- ORDER FORM -->
-        <div class="col-sm-6" id="formColumn">
-          <h2>Order Here:</h2>
-          <form id="new-pizza-order">
-            <div class="form-group">
-              <label for="inputtedQuantity">Quantity:</label>
-              <input id="inputtedQuantity" type="number">
-            </div>
-            <div class="form-group">
-              <label for="inputtedPizzaSize">Size:</label>
-              <select class="form-control" id="inputtedPizzaSize">
-                <option selected disabled></option>
-                <option value="Small">Small</option>
-                <option value="Medium">Medium</option>
-                <option value="Large">Large</option>
-                <option value="Extra Large">Extra Large</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="inputtedPizzaName">Name Your Order:</label>
-              <input id="inputtedPizzaName" type="text">
-            </div>
-            <div class="form-group">
-              <label for="inputtedToppings">Select Your Toppings:</label>
-              <p>($0.50 each)</p>
-
-              <div class="row">
-
-                <div class="col-xs-4">
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="toppings" value="Pepperoni">Pepperoni</label>
+          <div class="col-sm-6" id="formColumn">
+            <h2>Order Here:</h2>
+            <form id="new-pizza-order">
+              <div class="form-group">
+                <label class="formLabels" for="inputtedQuantity">Quantity:</label>
+                <input id="inputtedQuantity" type="number" min="1" max="1" placeholder="Example: 1">
+              </div>
+              <div class="form-group">
+                <label class="formLabels" for="inputtedPizzaSize">Size:</label>
+                <select class="form-control" id="inputtedPizzaSize">
+                  <option selected disabled></option>
+                  <option value="Small">Small</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Large">Large</option>
+                  <option value="Extra Large">Extra Large</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="formLabels" for="inputtedPizzaName">Name Your Order:</label>
+                <input id="inputtedPizzaName" type="text">
+              </div>
+              <div class="form-group">
+                <label class="formLabels" for="inputtedToppings">Select Your Toppings:</label>
+                <p><em>($0.50 each)</em></p>
+                <div class="row">
+                  <div class="col-xs-4">
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="toppings" value="Pepperoni">Pepperoni</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="toppings" value="Canadian Bacon">Canadian Bacon</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="toppings" value="Sausage">Sausage</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="toppings" value="Bacon">Bacon</label>
+                    </div>
                   </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="toppings" value="Canadian Bacon">Canadian Bacon</label>
+                  <div class="col-xs-4">
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="toppings" value="Steak">Steak</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="toppings" value="Onions">Onions</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="toppings" value="Peppers">Peppers</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="toppings" value="Olives">Olives</label>
+                    </div>
                   </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="toppings" value="Sausage">Sausage</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="toppings" value="Bacon">Bacon</label>
-                  </div>
-                </div>
-
-                <div class="col-xs-4">
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="toppings" value="Steak">Steak</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="toppings" value="Onions">Onions</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="toppings" value="Peppers">Peppers</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="toppings" value="Olives">Olives</label>
-                  </div>
-                </div>
-                <div class="col-xs-4">
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="toppings" value="Mushrooms">Mushrooms</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="toppings" value="Pineapple">Pineapple</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="toppings" value=" ">Extra Cheese</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="toppings" value="Extra Sauce">Extra Sauce</label>
+                  <div class="col-xs-4">
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="toppings" value="Mushrooms">Mushrooms</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="toppings" value="Pineapple">Pineapple</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="toppings" value=" ">Extra Cheese</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" name="toppings" value="Extra Sauce">Extra Sauce</label>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <button type="submit" class="btn">Submit Your Order!</button>
-          </form>
+              <button type="submit" class="btn">Place Your Order!</button>
+            </form>
 <!-- ORDER FORM END -->
             <h3 class="userOrders">Order:</h3>
+            <p class="userOrders">Click on your pizza below to see your order details.</p>
             <ul id=order>
             </ul>
-        </div>
+          </div>
 <!-- ORDER RESULTS -->
-        <div class="col-sm-6">
-          <div id="orderDetails">
-            <h3></h3>
-            <p>Toppings:</p>
+          <div class="col-sm-6" id="detailsSidebar">
+            <div id="orderDetails">
+              <h3></h3>
+              <p>Toppings:</p>
               <ul id=toppings>
               </ul>
-            <p>Price:<span class="finalPrice"></span></p>
+              <p>Price:<span class="finalPrice"></span></p>
+            </div>
           </div>
+<!-- END ORDER RESULTS -->
         </div>
-
       </div>
     </div>
-
   </body>
 </html>

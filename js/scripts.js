@@ -69,7 +69,7 @@ $(document).ready(function() {
       $(".finalPrice").text(" $" + fullPrice);
 
       for (var i = 0; i < chosenToppings.length; i++) {
-        $("ul#toppings").append("<li>" + chosenToppings[i] + "</li>")
+        $("ul#toppings").append("<li>" + chosenToppings[i] + "</li>");
       };
     });
     resetFields();

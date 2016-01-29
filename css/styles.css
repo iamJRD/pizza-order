@@ -2,3 +2,78 @@
 #orderDetails {
   display: none;
 }
+
+body {
+  font-family: helvetica;
+}
+
+input {
+  color: #000;
+}
+
+.jumbotron {
+  background-image: url(../img/pizza.jpg);
+  background-size: cover;
+  color: #33CCCC;
+}
+
+.jumbotron h1 {
+  font-weight: bold;
+  text-shadow: 3px 3px #000;
+}
+
+.formLabels {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-style: italic;
+}
+
+.btn {
+  margin-bottom: 15px;
+  color: #FFF;
+  background-color: #33CCCC;
+}
+
+.order {
+  color: #BF3030;
+  text-decoration: underline;
+}
+
+.order:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#formColumn {
+  color: #33CCCC;
+  background-color: #BF8F30;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+#formColumn h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#inputtedQuantity {
+  width: 100px;
+}
+
+#detailsSidebar {
+  color: #33CCCC;
+  background-color: #BF3030;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+#column-wrap {
+  overflow: hidden;
+}
+
+#order {
+  list-style: none;
+}
