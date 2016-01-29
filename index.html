@@ -7,9 +7,104 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Gantenbein Pizza</title>
   </head>
   <body>
-    
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1>Welcome to Gantenbein Pizza!</h1>
+        <br>
+        <br>
+        <p class="lead">"The best pizza pie in all of Portland!"</p>
+        <p>- Wolfgang Puck</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+<!-- ORDER FORM -->
+        <div class="col-sm-6" id="formColumn">
+          <h2>Order Here:</h2>
+          <form id="new-pizza-order">
+            <div class="form-group">
+              <label for="inputtedQuantity">Quantity:</label>
+              <input id="inputtedQuantity" type="number">
+            </div>
+            <div class="form-group">
+              <label for="inputtedSize">Size:</label>
+              <select class="form-control" id="inputtedSize">
+                <option selected disabled></option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+                <option value="ExtraLarge">Extra Large</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="inputtedPizzaName">Name Your Order:</label>
+              <input id="inputtedPizzaName" type="text">
+            </div>
+            <div class="form-group">
+              <label for="inputtedToppings">Select Your Toppings:</label>
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="0.50" name="Pepperoni">Pepperoni</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="0.50" name="CanadianBacon">Canadian Bacon</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="0.50" name="Sausage">Sausage</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="0.50" name="Bacon">Bacon</label>
+                  </div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="0.50" name="Steak">Steak</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="0.50" name="Onions">Onions</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="0.50" name="Peppers">Peppers</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="0.50" name="Olives">Olives</label>
+                  </div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="0.50" name="Mushrooms">Mushrooms</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="0.50" name="Pineapple">Pineapple</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="0.50" name="ExtraCheese">Extra Cheese</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="0.50" name="ExtraSauce">Extra Sauce</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn">Submit Your Order!</button>
+          </form>
+<!-- ORDER FORM END -->
+          <p class="lead" id="finalOrder"></p>
+        </div>
+<!-- ORDER RESULTS -->
+        <div class="col-sm-6">
+          <div id="orderResults">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </body>
 </html>

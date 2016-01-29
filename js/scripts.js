@@ -1,11 +1,12 @@
-function PizzaOrder(quantity, pizzaSize, toppings, price) {
+function PizzaOrder(quantity, pizzaSize, pizzaName, toppings, price) {
   this.quantity = quantity;
   this.pizzaSize = pizzaSize;
+  this.pizzaName = pizzaName;
   this.toppings = [];
   this.price = price;
 };
 
-  var pizzaToppings = ["Pepperoni","Canadian Bacon","Sausage","Bacon","Onions","Peppers","Olives","Mushrooms","Extra Cheese","Extra Sauce"];
+  var pizzaToppings = ["Pepperoni","Canadian Bacon","Sausage","Bacon","Onions","Peppers","Olives","Mushrooms","Pineapple","Extra Cheese","Extra Sauce"];
 
 PizzaOrder.prototype.pricing = function() {
 
