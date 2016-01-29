@@ -24,8 +24,12 @@ PizzaOrder.prototype.pricing = function() {
     medPizzaPrice -= 2;
   } if (this.pizzaSize === "Large") {
     medPizzaPrice += 2;
-  } if (this.pizzaSize === "Extra Large") {
+  } if (this.pizzaSize === "ExtraLarge") {
     medPizzaPrice += 4;
   }
   return medPizzaPrice + (chosenToppings.length / 2);
+};
+
+PizzaOrder.prototype.orderSummary = function() {
+  return this.pizzaSize + " " + this.pizzaName;
 };

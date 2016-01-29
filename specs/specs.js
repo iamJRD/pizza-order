@@ -12,4 +12,9 @@ describe ("PizzaOrder", function() {
     var testPizzaOrder = new PizzaOrder("1", "Medium", []);
     expect(testPizzaOrder.pricing()).to.equal(14);
   });
+
+  it("creates the order summary prototype", function() {
+    var testPizzaOrder = new PizzaOrder("1", "Large", "name", [], 16);
+    expect(testPizzaOrder.orderSummary()).to.equal("Large name");
+  });
 });
