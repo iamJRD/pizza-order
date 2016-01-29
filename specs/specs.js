@@ -15,7 +15,7 @@ describe ("PizzaOrder", function() {
   });
 
   it("creates the order summary prototype", function() {
-    var testPizzaOrder = new PizzaOrder("1", "Large", "name", [], 16);
+    var testPizzaOrder = new PizzaOrder("1", "Large", "name", []);
     expect(testPizzaOrder.orderSummary()).to.equal("Large name");
   });
 });

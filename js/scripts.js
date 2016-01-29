@@ -14,9 +14,9 @@ PizzaOrder.prototype.pricing = function() {
 
   for (var i = 0; i < this.toppings.length; i++) {
     for (var j = 0; j < pizzaToppings.length; j++) {
-      if(this.toppings[i] === pizzaToppings[i]) {
-        this.toppingsPrice.push(0.50);
-        medPizzaPrice += 0.50;
+      if(this.toppings[i] === pizzaToppings[j]) {
+        this.toppingsPrice.push(.50);
+        medPizzaPrice += .50;
       }
     }
   }
@@ -42,3 +42,40 @@ function resetFields() {
   $("input#inputtedPizzaName").val("");
   $("input:checkbox").removeAttr("checked");
 }
+
+$(document).ready(function() {
+  $("form#new-pizza-order").submit(function(event) {
+    event.preventDefault();
+
+    var inputtedQuantity = $("input#inputtedQuantity").val();
+    var selectedPizzaSize = $("select#inputtedPizzaSize").val();
+    var inputtedPizzaName = $("input#inputtedPizzaName").val();
+
+    var chosenToppings = [];
+      $.each($("input[name='toppings']:checked"), function() {
+        chosenToppings.push($(this).val());
+      });
+
+    var newPizzaOrder = new PizzaOrder(inputtedQuantity, selectedPizzaSize, inputtedPizzaName, chosenToppings);
+    var totalPrice = newPizzaOrder.pricing();
+
+    $(".userOrders").show();
+    $("ul#order").append("<li><span class='order'>" + newPizzaOrder.orderSummary() + "</span></li>");
+
+    $(".order").last().click(function() {
+      $("#orderDetails").show();
+      $("#orderDetails h3").text(newPizzaOrder.orderSummary());
+      $(".totalPrice").text("$" + totalPrice);
+
+      for (var i = 0; i < chosenToppings.length; i++) {
+        $("ul#toppings").append("<li>" + chosenToppings[i] + "</li>")
+      };
+    });
+
+
+
+
+
+    resetFields();
+  });
+});

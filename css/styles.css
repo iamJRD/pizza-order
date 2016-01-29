@@ -1,3 +1,4 @@
-.orders {
+.userOrders,
+#orderDetails {
   display: none;
 }
