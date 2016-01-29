@@ -2,10 +2,6 @@
 
 #### By _**{Name}**, {Date}_
 
-## Description
-
-_{Description of program/application}_
-
 ## Setup/Installation Requirements
 
 _{Installation description and instructions of how app operates}_
