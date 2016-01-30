@@ -67,7 +67,7 @@ $(document).ready(function() {
     $("ul#order").append("<li><span class='order'>" + newPizzaOrder.orderSummary() + "</span></li>");
     };
 
-    $(".order").last().click(function() {
+    $(".order").one("click", function() {
       $("#orderDetails").show();
       $("#orderDetails h3").text(newPizzaOrder.orderSummary());
       $(".finalPrice").text(" $" + fullPrice);

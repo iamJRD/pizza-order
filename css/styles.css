@@ -5,6 +5,7 @@
 
 body {
   font-family: helvetica;
+  background-color: #006363;
 }
 
 input {
@@ -35,6 +36,10 @@ input {
   margin-bottom: 15px;
   color: #FFF;
   background-color: #33CCCC;
+}
+
+.checkbox {
+  margin-right: -15px;
 }
 
 .order {
