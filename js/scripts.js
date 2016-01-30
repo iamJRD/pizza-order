@@ -60,8 +60,12 @@ $(document).ready(function() {
     var totalPrice = newPizzaOrder.pricing();
     var fullPrice = totalPrice.toFixed(2);
 
+    if (inputtedPizzaSize === "" || inputtedPizzaName === "") {
+      alert("Please fill out all fields so we can properly complete your order!");
+    } else {
     $(".userOrders").show();
     $("ul#order").append("<li><span class='order'>" + newPizzaOrder.orderSummary() + "</span></li>");
+    };
 
     $(".order").last().click(function() {
       $("#orderDetails").show();
