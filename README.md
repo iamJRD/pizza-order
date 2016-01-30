@@ -34,5 +34,5 @@ _Please feel free to get in contact with me through GitHub with any questions, c
 
 ### License
 
-Copyright (c) 2015 **_Jared Beckler_**
+Copyright (c) 2016 **_Jared Beckler_**
 **_This software is licensed under the MIT license._**
