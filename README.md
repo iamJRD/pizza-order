@@ -1,38 +1,31 @@
-# _Pizza Order Form_
+# Pizza Order Form Calculator
 
-#### By _**Jared Beckler**, January, 2016_
+#### By: Jared Beckler | Epicodus | January 2016
 
-## Description
+This project is further exploration of HTML/CSS/JavaScript/jQuery and is designed to take in user inputs and calculate the cost of the pizza order.
 
-_For this project we were required to do the following_
+## Installation
 
-* Allow the user to choose toppings and size for the pizza they'd like to order.
-* Create a pizza object constructor with properties for toppings and size.
-* Create a prototype method for the cost of a pizza depending on the selections chosen using our own formula.
+* `git clone https://github.com/jaredbeckler/pizza-order` this repository
+* Change into the new directory
+* Drag `index.html` into a web browser to view the page
 
-## Setup/Installation Requirements
+## Known Bugs
 
-_You may install the application locally by cloning this repository:_
-
-https://github.com/jaredbeckler/pizza-order.git
-
-_Or you can click_ [here](http://jaredbeckler.github.io/pizza-order) _to run the application directly on GitHub Pages._
+There are currently no known bugs.
 
 ## Support and contact details
 
-_Please feel free to get in contact with me through GitHub with any questions, concerns or found bugs._
+If you have any issues, questions, ideas, or concerns contact me through GitHUb. If you would like to make a contribution to the code, feel free to do so and notify me by e-mail.
 
 ## Technologies Used
 
 * HTML
 * CSS
 * Bootstrap
-* jQuery
 * JavaScript
-* Git, GitHub, GitHub Pages
-* BDD and OO JavaScript
+* jQuery
 
 ### License
 
-Copyright (c) 2016 **_Jared Beckler_**
-**_This software is licensed under the MIT license._**
+Copyright &copy; 2016  |  Jared Beckler  |  Epicodus  |  Portland, OR
